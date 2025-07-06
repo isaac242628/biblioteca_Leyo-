@@ -1,0 +1,156 @@
+@import url(import.css);
+@import url(NavBar.css);
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jacques Francois", serif;
+}
+
+body {
+    height: 100vh;
+    background: #D2B48C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Principal section */
+.principal {
+    height: 100vh;
+    background-image: url(../img/d8515f6560eb8a1c3da1ab7d721c43c039af0ee9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Content container */
+.tela {
+    height: 40%;
+    width: 70%;
+    margin: 5%;
+    position: absolute;
+    padding: 40px;
+    background: transparent;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 36px;
+}
+
+.texto {
+    text-align: justify;
+    color: #fff;
+    font-size: 20px;
+}
+
+.separador {
+    margin-top: 20px;
+}
+
+#segundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+}
+
+#centro {
+    margin-top: 0;
+    text-align: center;
+}
+
+.mudanca {
+    color: #591902;
+}
+
+#terceiro {
+    background-image: url(../img/d6e7d65728d81e0366968df1eb5c253311a836ab.png);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#end {
+    margin-left: 30%;
+    text-align: end;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 15px 30px;
+    box-shadow: none;
+}
+
+.degrade {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #591902, #00000000);
+    padding-top: 100px;
+}
+
+#left {
+    background: linear-gradient(to left, #591902, #BF360400);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100%;
+    }
+
+    .tela {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    #terceiro {
+        justify-content: center;
+    }
+
+    #end {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .degrade {
+        background: linear-gradient(to bottom, #591902, #00000080);
+        padding-top: 80px;
+    }
+
+    #left {
+        background: linear-gradient(to top, #591902, #00000080);
+    }
+
+    footer {
+        padding: 0 0 -50px;
+    }
+
+    footer #footer_items {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
